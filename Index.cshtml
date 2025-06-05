@@ -1,4 +1,4 @@
-﻿﻿@{
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -8,7 +8,7 @@
             <div class="col-md-4">
                 <div class="join_1l position-relative">
                     <div class="join_1li">
-                        <img src="~/Content/img/4.jpg" class="w-100" alt="abc">
+                        <img src="@Url.Content("~/Content/img/4.jpg")" class="w-100" alt="abc">
                     </div>
                     <div class="join_1li1 p-4 bg_backo position-absolute w-100 h-100 top-0">
                         <div class="join_1li1n row">
@@ -33,7 +33,7 @@
             <div class="col-md-4">
                 <div class="join_1l position-relative">
                     <div class="join_1li">
-                        <img src="~/Content/img/4.jpg" class="w-100" alt="abc">
+                        <img src="@Url.Content("~/Content/img/4.jpg")" class="w-100" alt="abc">
                     </div>
                     <div class="join_1li1 p-4 bg_backo position-absolute w-100 h-100 top-0">
                         <div class="join_1li1n row">
@@ -59,7 +59,7 @@
             <div class="col-md-4">
                 <div class="join_1l position-relative">
                     <div class="join_1li">
-                        <img src="~/Content/img/4.jpg" class="w-100" alt="abc">
+                        <img src="@Url.Content("~/Content/img/4.jpg")" class="w-100" alt="abc">
                     </div>
                     <div class="join_1li1 p-4 bg_backo position-absolute w-100 h-100 top-0">
                         <div class="join_1li1n row">
@@ -99,48 +99,52 @@
             <div class="col-md-3 col-sm-6">
                 <div class="trend_2i position-relative">
                     <div class="trend_2i1">
-                        <img src="~/Content/img/5.jpg" class="w-100" alt="abc">
+                        <img src="@Url.Content("~/Content/img/4.jpg")" class="w-100" style="height: 300px; object-fit: cover;" alt="abc">
+
                     </div>
                     <div class="trend_2i2 bg_back position-absolute w-100 h-100 top-0 px-4">
                         <h6 class="font_14 text-light">Comedy / 180 Mins </h6>
-                        <h5><a class="text-white a_tag" href="#">The Fifth Day</a></h5>
-                        <h6 class="mb-0 mt-3"><a class="button_1 p-2 px-3 font_14" href="#">Get Ticket</a></h6>
+                        <h5><a class="text-white a_tag" href="#">The housefull 5</a></h5>
+                        <h6 class="mb-0 mt-3"><a class="button_1 p-2 px-3 font_14" href="@Url.Action("Ticket","Home")">Get Ticket</a></h6>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="trend_2i position-relative">
                     <div class="trend_2i1">
-                        <img src="~/Content/img/6.jpg" class="w-100" alt="abc">
+                        <img src="@Url.Content("~/Content/img/5.jpg")" class="w-100" style="height: 300px; object-fit: cover;" alt="abc">
+
                     </div>
                     <div class="trend_2i2 bg_back position-absolute w-100 h-100 top-0 px-4">
-                        <h6 class="font_14 text-light">Animation / 160 Mins </h6>
-                        <h5><a class="text-white a_tag" href="#">Black & White</a></h5>
-                        <h6 class="mb-0 mt-3"><a class="button_1 p-2 px-3 font_14" href="#">Get Ticket</a></h6>
+                        <h6 class="font_14 text-light">Thiller / 160 Mins </h6>
+                        <h5><a class="text-white a_tag" href="#">Thug Life</a></h5>
+                        <h6 class="mb-0 mt-3"><a class="button_1 p-2 px-3 font_14" href="@Url.Action("Ticket","Home")">Get Ticket</a></h6>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="trend_2i position-relative">
                     <div class="trend_2i1">
-                        <img src="~/Content/img/7.jpg" class="w-100" alt="abc">
+                        <img src="@Url.Content("~/Content/img/6.jpg")" class="w-100" style="height: 300px; object-fit: cover;" alt="abc">
+
                     </div>
                     <div class="trend_2i2 bg_back position-absolute w-100 h-100 top-0 px-4">
-                        <h6 class="font_14 text-light">Thriller / 190 Mins </h6>
-                        <h5><a class="text-white a_tag" href="#">Scariest Game</a></h5>
-                        <h6 class="mb-0 mt-3"><a class="button_1 p-2 px-3 font_14" href="#">Get Ticket</a></h6>
+                        <h6 class="font_14 text-light">Comedy / 190 Mins </h6>
+                        <h5><a class="text-white a_tag" href="#">Bhool Chuk Maaf</a></h5>
+                        <h6 class="mb-0 mt-3"><a class="button_1 p-2 px-3 font_14" href="@Url.Action("Ticket","Home")">Get Ticket</a></h6>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="trend_2i position-relative">
                     <div class="trend_2i1">
-                        <img src="~/Content/img/8.png" class="w-100" alt="abc">
+                        <img src="@Url.Content("~/Content/img/7.jpg")" class="w-100" style="height: 300px; object-fit: cover;" alt="abc">
+
                     </div>
                     <div class="trend_2i2 bg_back position-absolute w-100 h-100 top-0 px-4">
-                        <h6 class="font_14 text-light">Romance / 150 Mins </h6>
-                        <h5><a class="text-white a_tag" href="#">New Day Dreams</a></h5>
-                        <h6 class="mb-0 mt-3"><a class="button_1 p-2 px-3 font_14" href="#">Get Ticket</a></h6>
+                        <h6 class="font_14 text-light">Action / 150 Mins </h6>
+                        <h5><a class="text-white a_tag" href="#">Karate kid Legends</a></h5>
+                        <h6 class="mb-0 mt-3"><a class="button_1 p-2 px-3 font_14" href="@Url.Action("Ticket","Home")">Get Ticket</a></h6>
                     </div>
                 </div>
             </div>
@@ -170,16 +174,17 @@
                     <div class="feat_2i1">
                         <div class="grid clearfix">
                             <figure class="effect-jazz mb-0">
-                                <a href="#"><img src="~/Content/img/9.jpg" class="w-100" alt="abc"></a>
+                                <img src="@Url.Content("~/Content/img/8.jpg")" class="w-100" style="height: 300px; object-fit: cover;" alt="abc">
+
                             </figure>
                         </div>
                     </div>
                     <div class="feat_2i2 position-absolute  bg-white shadow_box p-4">
-                        <h5><a href="#">The Fifth Day</a></h5>
-                        <h6 class="font_14 mt-3"><i class="fa fa-tag col_oran me-1"></i> Comedy <i class="fa fa-clock-o col_oran me-1 ms-3"></i> 180 Mins</h6>
+                        <h5><a href="#">The fantastic Four</a></h5>
+                        <h6 class="font_14 mt-3"><i class="fa fa-tag col_oran me-1"></i> Action/Sci-Fic <i class="fa fa-clock-o col_oran me-1 ms-3"></i> 180 Mins</h6>
                         <ul class="mb-0 mt-3 font_14">
                             <li class="d-inline-block"><a href="#">Watch Trailer</a></li>
-                            <li class="d-inline-block ms-2"><a href="#">Get Ticket</a></li>
+                            <li class="d-inline-block ms-2"><a href="@Url.Action("Ticket","Home")">Get Ticket</a></li>
                         </ul>
                     </div>
                 </div>
@@ -189,16 +194,17 @@
                     <div class="feat_2i1">
                         <div class="grid clearfix">
                             <figure class="effect-jazz mb-0">
-                                <a href="#"><img src="~/Content/img/10.jpg" class="w-100" alt="abc"></a>
+                                <img src="@Url.Content("~/Content/img/9.jpg")" class="w-100" style="height: 300px; object-fit: cover;" alt="abc">
+
                             </figure>
                         </div>
                     </div>
                     <div class="feat_2i2 position-absolute  bg-white shadow_box p-4">
-                        <h5><a href="#">Scariest Game</a></h5>
+                        <h5><a href="#">Raid 2</a></h5>
                         <h6 class="font_14 mt-3"><i class="fa fa-tag col_oran me-1"></i> Thriller <i class="fa fa-clock-o col_oran me-1 ms-3"></i> 150 Mins</h6>
                         <ul class="mb-0 mt-3 font_14">
                             <li class="d-inline-block"><a href="#">Watch Trailer</a></li>
-                            <li class="d-inline-block ms-2"><a href="#">Get Ticket</a></li>
+                            <li class="d-inline-block ms-2"><a href="@Url.Action("Ticket","Home")">Get Ticket</a></li>
                         </ul>
                     </div>
                 </div>
@@ -208,16 +214,17 @@
                     <div class="feat_2i1">
                         <div class="grid clearfix">
                             <figure class="effect-jazz mb-0">
-                                <a href="#"><img src="~/Content/img/11.jpg" class="w-100" alt="abc"></a>
+                                <img src="@Url.Content("~/Content/img/10.jpg")" class="w-100" style="height: 300px; object-fit: cover;" alt="abc">
+
                             </figure>
                         </div>
                     </div>
                     <div class="feat_2i2 position-absolute  bg-white shadow_box p-4">
-                        <h5><a href="#">Black & White</a></h5>
+                        <h5><a href="#">Ballerina</a></h5>
                         <h6 class="font_14 mt-3"><i class="fa fa-tag col_oran me-1"></i> Action <i class="fa fa-clock-o col_oran me-1 ms-3"></i> 160 Mins</h6>
                         <ul class="mb-0 mt-3 font_14">
                             <li class="d-inline-block"><a href="#">Watch Trailer</a></li>
-                            <li class="d-inline-block ms-2"><a href="#">Get Ticket</a></li>
+                            <li class="d-inline-block ms-2"><a href="@Url.Action("Ticket","Home")">Get Ticket</a></li>
                         </ul>
                     </div>
                 </div>
@@ -226,7 +233,7 @@
         <div class="row feat_3  border_1 p-3 mx-auto">
             <div class="col-md-9">
                 <div class="feat_3l mt-1">
-                    <p class="mb-0"><span class="fs-5 col_oran fw-bold align-middle">23,00+</span> more comedy & horror movies you can explore</p>
+                    <p class="mb-0"><span class="fs-5 col_oran fw-bold align-middle">23,00+</span> more Action, Thriller & horror movies U can explore</p>
                 </div>
             </div>
             <div class="col-md-3">
@@ -274,7 +281,8 @@
                     <div class="gallery_2i1">
                         <div class="grid clearfix">
                             <figure class="effect-jazz mb-0">
-                                <a href="#"><img src="~/Content/img/12.jpg" class="w-100" alt="abc"></a>
+                                <img src="@Url.Content("~/Content/img/11.jpg")" class="w-100" style="height: 300px; object-fit: cover;" alt="abc">
+
                             </figure>
                         </div>
                     </div>
@@ -288,7 +296,8 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
                                 </div>
                                 <div class="modal-body">
-                                    <img src="~/Content/img/12.jpg" class="w-100" alt="abc">
+                                    <img src="@Url.Content("~/Content/img/12.jpg")" class="w-100" style="height: 300px; object-fit: cover;" alt="abc">
+
                                 </div>
                             </div>
                         </div>
@@ -300,7 +309,8 @@
                     <div class="gallery_2i1">
                         <div class="grid clearfix">
                             <figure class="effect-jazz mb-0">
-                                <a href="#"><img src="~/Content/img/13.jpg" class="w-100" alt="abc"></a>
+                                <img src="@Url.Content("~/Content/img/13.jpg")" class="w-100" style="height: 300px; object-fit: cover;" alt="abc">
+
                             </figure>
                         </div>
                     </div>
@@ -314,7 +324,8 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
                                 </div>
                                 <div class="modal-body">
-                                    <img src="~/Content/img/13.jpg" class="w-100" alt="abc">
+                                    <img src="@Url.Content("~/Content/img/13.jpg")" class="w-100" style="height: 300px; object-fit: cover;" alt="abc">
+
                                 </div>
                             </div>
                         </div>
@@ -326,7 +337,8 @@
                     <div class="gallery_2i1">
                         <div class="grid clearfix">
                             <figure class="effect-jazz mb-0">
-                                <a href="#"><img src="~/Content/img/14.jpg" class="w-100" alt="abc"></a>
+                                <img src="@Url.Content("~/Content/img/14.jpg")" class="w-100" style="height: 300px; object-fit: cover;" alt="abc">
+
                             </figure>
                         </div>
                     </div>
@@ -340,7 +352,8 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
                                 </div>
                                 <div class="modal-body">
-                                    <img src="~/Content/img/14.jpg" class="w-100" alt="abc">
+                                    <img src="@Url.Content("~/Content/img/14.jpg")" class="w-100" style="height: 300px; object-fit: cover;" alt="abc">
+
                                 </div>
                             </div>
                         </div>
@@ -352,7 +365,8 @@
                     <div class="gallery_2i1">
                         <div class="grid clearfix">
                             <figure class="effect-jazz mb-0">
-                                <a href="#"><img src="~/Content/img/15.jpg" class="w-100" alt="abc"></a>
+                                <img src="@Url.Content("~/Content/img/15.jpg")" class="w-100" style="height: 300px; object-fit: cover;" alt="abc">
+
                             </figure>
                         </div>
                     </div>
@@ -365,8 +379,7 @@
                                 <div class="modal-header border-0">
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
                                 </div>
-                                <div class="modal-body">
-                                    <img src="~/Content/img/15.jpg" class="w-100" alt="abc">
+                                <div class="modal-body"><img src="@Url.Content("~/Content/img/15.jpg")" class="w-100" style="height: 300px; object-fit: cover;" alt="abc"><img src="@Url.Content("~/Content/img/15.jpg")" class="w-100" alt="abc">
                                 </div>
                             </div>
                         </div>
@@ -378,7 +391,7 @@
                     <div class="gallery_2i1">
                         <div class="grid clearfix">
                             <figure class="effect-jazz mb-0">
-                                <a href="#"><img src="~/Content/img/16.jpg" class="w-100" alt="abc"></a>
+                                <img src="@Url.Content("~/Content/img/16.jpg")" class="w-100" style="height: 300px; object-fit: cover;" alt="abc">
                             </figure>
                         </div>
                     </div>
@@ -392,7 +405,7 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
                                 </div>
                                 <div class="modal-body">
-                                    <img src="~/Content/img/16.jpg" class="w-100" alt="abc">
+                                    <img src="@Url.Content("~/Content/img/16.jpg")" class="w-100" style="height: 300px; object-fit: cover;" alt="abc">
                                 </div>
                             </div>
                         </div>
@@ -426,7 +439,7 @@
                                 <div class="event_1ril1">
                                     <div class="grid clearfix">
                                         <figure class="effect-jazz mb-0">
-                                            <a href="#"><img src="~/Content/img/17.jpg" height="240" class="w-100" alt="abc"></a>
+                                            <img src="@Url.Content("~/Content/img/17.jpg")" class="w-100" style="height: 300px; object-fit: cover;" alt="abc">
                                         </figure>
                                     </div>
                                 </div>
@@ -449,7 +462,7 @@
                                 <div class="event_1ril1">
                                     <div class="grid clearfix">
                                         <figure class="effect-jazz mb-0">
-                                            <a href="#"><img src="~/Content/img/18.jpg" height="240" class="w-100" alt="abc"></a>
+                                            <img src="@Url.Content("~/Content/img/18.jpg")" class="w-100" style="height: 300px; object-fit: cover;" alt="abc">
                                         </figure>
                                     </div>
                                 </div>
@@ -502,7 +515,7 @@
                                         <div class="testim_1i1 bg-white p-4 clearfix">
                                             <span class="d-inline-block bg_oran text-white text-center span_1 rounded-circle"><i class="fa fa-quote-left"></i></span>
                                             <div class="testim_1i1i clearfix mt-3">
-                                                <span><img src="~/Content/img/19.jpg" alt="abc" class="rounded-circle me-3 float-start"></span>
+                                                <img src="@Url.Content("~/Content/img/19.jpg")" class="w-100" style="height: 300px; object-fit: cover;" alt="abc">
                                                 <h6 class="mb-0 fw-bold text-uppercase"> Eget Nulla <br> <span class="col_oran font_14 fw-normal">Customer</span></h6>
                                             </div>
                                             <p class="mb-0 mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer typesetting, remaining essentially unchanged.</p>
@@ -517,7 +530,7 @@
                                         <div class="testim_1i1 bg-white p-4 clearfix">
                                             <span class="d-inline-block bg_oran text-white text-center span_1 rounded-circle"><i class="fa fa-quote-left"></i></span>
                                             <div class="testim_1i1i clearfix mt-3">
-                                                <span><img src="~/Content/img/20.jpg" alt="abc" class="rounded-circle me-3 float-start"></span>
+                                                <span><img src="@Url.Content("~/Content/img/20.jpg")" alt="abc" class="rounded-circle me-3 float-start"></span>
                                                 <h6 class="mb-0 fw-bold text-uppercase"> Lorem Porta <br> <span class="col_oran font_14 fw-normal">Customer</span></h6>
                                             </div>
                                             <p class="mb-0 mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer typesetting, remaining essentially unchanged.</p>
@@ -548,48 +561,48 @@
             <div class="col-md-3 col-sm-6">
                 <div class="trend_2i position-relative">
                     <div class="trend_2i1">
-                        <img src="~/Content/img/21.jpg" class="w-100" alt="abc">
+                        <img src="@Url.Content("~/Content/img/21.jpg")" class="w-100" alt="abc">
                     </div>
                     <div class="trend_2i2 bg_back position-absolute w-100 h-100 top-0 px-4">
                         <h6 class="font_14 text-light">Comedy / 180 Mins </h6>
                         <h5><a class="text-white a_tag" href="#">The Fifth Day</a></h5>
-                        <h6 class="mb-0 mt-3"><a class="button_1 p-2 px-3 font_14" href="#">Get Ticket</a></h6>
+                        <h6 class="mb-0 mt-3"><a class="button_1 p-2 px-3 font_14" href="@Url.Action("Ticket","Home")">Get Ticket</a></h6>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="trend_2i position-relative">
                     <div class="trend_2i1">
-                        <img src="~/Content/img/22.jpg" class="w-100" alt="abc">
+                        <img src="@Url.Content("~/Content/img/22.jpg")" class="w-100" alt="abc">
                     </div>
                     <div class="trend_2i2 bg_back position-absolute w-100 h-100 top-0 px-4">
                         <h6 class="font_14 text-light">Animation / 160 Mins </h6>
                         <h5><a class="text-white a_tag" href="#">Black &amp; White</a></h5>
-                        <h6 class="mb-0 mt-3"><a class="button_1 p-2 px-3 font_14" href="#">Get Ticket</a></h6>
+                        <h6 class="mb-0 mt-3"><a class="button_1 p-2 px-3 font_14" href="@Url.Action("Ticket","Home")">Get Ticket</a></h6>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="trend_2i position-relative">
                     <div class="trend_2i1">
-                        <img src="~/Content/img/23.jpg" class="w-100" alt="abc">
+                        <img src="@Url.Content("~/Content/img/23.jpg")" class="w-100" alt="abc">
                     </div>
                     <div class="trend_2i2 bg_back position-absolute w-100 h-100 top-0 px-4">
                         <h6 class="font_14 text-light">Thriller / 190 Mins </h6>
                         <h5><a class="text-white a_tag" href="#">Scariest Game</a></h5>
-                        <h6 class="mb-0 mt-3"><a class="button_1 p-2 px-3 font_14" href="#">Get Ticket</a></h6>
+                        <h6 class="mb-0 mt-3"><a class="button_1 p-2 px-3 font_14" href="@Url.Action("Ticket","Home")">Get Ticket</a></h6>
                     </div>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="trend_2i position-relative">
                     <div class="trend_2i1">
-                        <img src="~/Content/img/24.png" class="w-100" alt="abc">
+                        <img src="@Url.Content("~/Content/img/24.jpg")" class="w-100" alt="abc">
                     </div>
                     <div class="trend_2i2 bg_back position-absolute w-100 h-100 top-0 px-4">
                         <h6 class="font_14 text-light">Romance / 150 Mins </h6>
                         <h5><a class="text-white a_tag" href="#">New Day Dreams</a></h5>
-                        <h6 class="mb-0 mt-3"><a class="button_1 p-2 px-3 font_14" href="#">Get Ticket</a></h6>
+                        <h6 class="mb-0 mt-3"><a class="button_1 p-2 px-3 font_14" href="@Url.Action("Ticket","Home")">Get Ticket</a></h6>
                     </div>
                 </div>
             </div>
@@ -607,7 +620,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="trend_o1i1ir text-end">
-                                <h6 class="mb-0 mt-4"><a class="button_3" href="#">Book Your Ticket</a></h6>
+                                <h6 class="mb-0 mt-4"><a class="button_3" href="@Url.Action("Ticket","Home")">Book Your Ticket</a></h6>
                             </div>
                         </div>
                     </div>
@@ -636,7 +649,7 @@
                         <div class="blog_h1m1">
                             <div class="grid clearfix">
                                 <figure class="effect-jazz mb-0">
-                                    <a href="#"><img src="~/Content/img/25.jpg" class="w-100" alt="img25"></a>
+                                    <a href="#"><img src="@Url.Content("~/Content/img/25.jpg")" class="w-100" alt="img25"></a>
                                 </figure>
                             </div>
                         </div>
@@ -654,7 +667,7 @@
                         <hr>
                         <h6 class="mt-4 mb-0 font_14">
                             <i class="fa fa-user col_oran me-1"></i>  <a href="#">Admin</a>
-                            <span class="pull-right"><i class="fa fa-comment-o col_oran me-1"></i> <a href="#">0 Comments</a></span>
+                            <span class="pull-right"><i class="fa fa-comment-o col_oran me-1"></i> <a href="@Url.Action("Comments","Home")"> Comments</a></span>
                         </h6>
                     </div>
                 </div>
@@ -665,7 +678,7 @@
                         <div class="blog_h1m1">
                             <div class="grid clearfix">
                                 <figure class="effect-jazz mb-0">
-                                    <a href="#"><img src="~/Content/img/26.jpg" class="w-100" alt="img25"></a>
+                                    <a href="#"><img src="@Url.Content("~/Content/img/26.jpg")" class="w-100" alt="img25"></a>
                                 </figure>
                             </div>
                         </div>
@@ -683,7 +696,7 @@
                         <hr>
                         <h6 class="mt-4 mb-0 font_14">
                             <i class="fa fa-user col_oran me-1"></i>  <a href="#">Admin</a>
-                            <span class="pull-right"><i class="fa fa-comment-o col_oran me-1"></i> <a href="#">0 Comments</a></span>
+                            <span class="pull-right"><i class="fa fa-comment-o col_oran me-1"></i> <a href="@Url.Action("Comments","Home")"> Comments</a></span>
                         </h6>
                     </div>
                 </div>
@@ -694,7 +707,7 @@
                         <div class="blog_h1m1">
                             <div class="grid clearfix">
                                 <figure class="effect-jazz mb-0">
-                                    <a href="#"><img src="~/Content/img/27.jpg" class="w-100" alt="img25"></a>
+                                    <a href="#"><img src="@Url.Content("~/Content/img/27.jpg")" class="w-100" alt="img25"></a>
                                 </figure>
                             </div>
                         </div>
@@ -712,7 +725,7 @@
                         <hr>
                         <h6 class="mt-4 mb-0 font_14">
                             <i class="fa fa-user col_oran me-1"></i>  <a href="#">Admin</a>
-                            <span class="pull-right"><i class="fa fa-comment-o col_oran me-1"></i> <a href="#">0 Comments</a></span>
+                            <span class="pull-right"><i class="fa fa-comment-o col_oran me-1"></i> <a href="@Url.Action("Comments","Home")"> Comments</a></span>
                         </h6>
                     </div>
                 </div>
@@ -728,7 +741,7 @@
                     <div class="footer_ti1">
                         <div class="grid clearfix">
                             <figure class="effect-jazz mb-0">
-                                <a href="#"><img src="~/Content/img/12.jpg" class="w-100" alt="img25"></a>
+                                <a href="#"><img src="@Url.Content("~/Content/img/12.jpg")" class="w-100" alt="img25"></a>
                             </figure>
                         </div>
                     </div>
@@ -743,7 +756,7 @@
                     <div class="footer_ti1">
                         <div class="grid clearfix">
                             <figure class="effect-jazz mb-0">
-                                <a href="#"><img src="~/Content/img/13.jpg" class="w-100" alt="img25"></a>
+                                <a href="#"><img src="@Url.Content("~/Content/img/13.jpg")" class="w-100" alt="img25"></a>
                             </figure>
                         </div>
                     </div>
@@ -758,7 +771,7 @@
                     <div class="footer_ti1">
                         <div class="grid clearfix">
                             <figure class="effect-jazz mb-0">
-                                <a href="#"><img src="~/Content/img/14.jpg" class="w-100" alt="img25"></a>
+                                <a href="#"><img src="@Url.Content("~/Content/img/14.jpg")" class="w-100" alt="img25"></a>
                             </figure>
                         </div>
                     </div>
