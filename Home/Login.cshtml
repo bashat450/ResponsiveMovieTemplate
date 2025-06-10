@@ -1,0 +1,36 @@
+﻿@model MovieTicketBooking.Models.LoginModal
+
+@{
+    ViewBag.Title = "Login";
+}
+
+@using (Html.BeginForm("Login", "Home", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <section id="login" class="p_3">
+        <div class="container-xl">
+            <div class="row login_1">
+                <div class="col-md-12">
+                    <div class="login_1m p-5 px-4 bg-light w-50 mx-auto">
+                        <h6 class="mb-3 fw-bold">Username</h6>
+                        @Html.TextBoxFor(m => m.Username, new { @class = "form-control", placeholder = "Username" })
+                        @Html.ValidationMessageFor(m => m.Username)
+
+                        <h6 class="mb-3 fw-bold mt-4">Password</h6>
+                        @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Password" })
+                        @Html.ValidationMessageFor(m => m.Password)
+
+                        <h6 class="mt-3 center_sm">
+                            <button type="submit" class="btn btn-primary w-100">LOGIN</button>
+                        </h6>
+
+                        @if (ViewBag.Message != null)
+                        {
+                            <p class="text-danger mt-2 text-center">@ViewBag.Message</p>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+}

@@ -1,0 +1,126 @@
+﻿@model MovieTicketBooking.Models.ContactMessageModal
+
+
+@{
+    ViewBag.Title = "ContactUs";
+}
+
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-success text-center">@ViewBag.Message</div>
+}
+
+
+<section id="contact" class="p_3">
+
+    <div class="container-xl">
+        <div class="row trend_1 text-center mb-4">
+            <div class="col-md-12">
+                <span class="fa fa-film col_oran"></span>
+                <h6 class="text-muted mt-3">Contact With Us</h6>
+                <h1 class="mb-0 font_50">
+                    Feel Free to Write us <br>
+                    Anytime
+                </h1>
+            </div>
+        </div>
+        @using (Html.BeginForm("ContactUs", "Home", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            <div class="blog_1dt5i row w-75 mx-auto">
+                <div class="col-md-6">
+                    @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "Your Name" })
+                    @Html.ValidationMessageFor(m => m.Name)
+                </div>
+                <div class="col-md-6">
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Email Address" })
+                    @Html.ValidationMessageFor(m => m.Email)
+                </div>
+            </div>
+
+            <div class="blog_1dt5i row mt-4 w-75 mx-auto">
+                <div class="col-md-6">
+                    @Html.TextBoxFor(m => m.Phone, new { @class = "form-control", placeholder = "Phone" })
+                </div>
+                <div class="col-md-6">
+                    @Html.TextBoxFor(m => m.Subject, new { @class = "form-control", placeholder = "Subject" })
+                </div>
+            </div>
+
+            <div class="blog_1dt5i row mt-4 w-75 mx-auto">
+                <div class="col-md-12">
+                    @Html.TextAreaFor(m => m.Message, new { @class = "form-control form_text", placeholder = "Write a Comment" })
+                    @Html.ValidationMessageFor(m => m.Message)
+
+                    <div class="text-center mt-4">
+                        <button type="submit" class="button_2">Send a Message</button>
+                    </div>
+                </div>
+            </div>
+         }
+        <div class="row contact_1 mt-4">
+            <div class="col-md-4">
+                <div class="contact_1i shadow_box p-5 px-4">
+                    <div class="contact_1i1 row">
+                        <div class="col-md-9">
+                            <div class="contact_1i1l">
+                                <h4 class="mb-3">About</h4>
+                                <p class="mb-0">We are a team of cinema fans, software engineers, designers, and service professionals passionate about creating a smarter way to book movie tickets.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="contact_1i1r">
+                                <span class="font_50 col_oran"><i class="fa fa-user-plus"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="contact_1i shadow_box p-5 px-4">
+                    <div class="contact_1i1 row">
+                        <div class="col-md-9">
+                            <div class="contact_1i1l">
+                                <h4 class="mb-3">Address</h4>
+                                <p class="mb-0">
+                                    B/106-107, Parmanand,
+                                    Ashok Nagar, Ambadi Road,
+                                    Vasai West - 401202.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="contact_1i1r">
+                                <span class="font_50 col_oran"><i class="fa fa-map"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="contact_1i shadow_box p-5 px-4">
+                    <div class="contact_1i1 row">
+                        <div class="col-md-9">
+                            <div class="contact_1i1l">
+                                <h4 class="mb-3">Contact</h4>
+                                <h6><a href="#">+(91) 345 67 89</a></h6>
+                                <h6><a href="#">justrelax@gmail.com</a></h6>
+                                <h6 class="mb-0"><a href="#">justrelax@outlook.com</a></h6>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="contact_1i1r">
+                                <span class="font_50 col_oran"><i class="fa fa-envelope"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row contact_2 mt-4">
+            <div class="col-md-12">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.6557929248047!2d72.82542481000374!3d19.38405124215552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7afa8d8243e91%3A0xf44039c313affd00!2sCorporatehunt%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1748857230207!5m2!1sen!2sin" height="460" style="border:0; width:100%;" allowfullscreen=""></iframe>
+            </div>
+        </div>
+    </div>
+</section>
